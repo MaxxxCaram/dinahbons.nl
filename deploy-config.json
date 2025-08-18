@@ -1,0 +1,28 @@
+{
+  "deployment": {
+    "method": "ftp",
+    "ftp": {
+      "server": "your-ftp-server.com",
+      "username": "your-username",
+      "password": "your-password",
+      "remotePath": "/public_html/"
+    },
+    "scp": {
+      "server": "your-server.com",
+      "username": "your-username",
+      "remotePath": "/var/www/html/"
+    },
+    "git": {
+      "remote": "origin",
+      "branch": "main"
+    }
+  },
+  "files": {
+    "include": ["*.html", "*.css", "*.js", "*.jpeg", "*.jpg", "*.png"],
+    "exclude": [".git/*", "node_modules/*", "*.tmp"]
+  },
+  "website": {
+    "url": "https://dinahbons.nl",
+    "name": "Dinah Bons Website"
+  }
+}
